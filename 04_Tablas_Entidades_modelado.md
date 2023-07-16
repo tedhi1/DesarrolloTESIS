@@ -1,8 +1,9 @@
 ## TABLAS de EC
 
-| Tipo_Estados |             |  
-|--------------|-------------|
+###  Tipo_Estados
+
 | estado_id    | Descripcion |
+|--------------|-------------|
 | 1            | Activo      |
 | 2            | Inactivo    |
 | 3            | Bloqueado   |
@@ -12,9 +13,10 @@
 | 7            | Pendiente   |
 
 
-| Tabla_guia_distribucion_estados |       |                |         |      |           |          |             |
-|---------------------------------|-------|----------------|---------|------|-----------|----------|-------------|
+###  Tabla_guia_distribucion_estados
+
 | Tipo_estado                     | Socio | Tipo_Membresia | Reserva | Area | Promocion | Invitado | pago_xSocio |
+|---------------------------------|-------|----------------|---------|------|-----------|----------|-------------|
 | Activo                          | x     | x              | x       | x    | x         | x        |             |
 | Inactivo                        | x     | x              |         | x    | x         | x        |             |
 | Bloqueado                       | x     |                |         |      |           | x        |             |
@@ -23,9 +25,10 @@
 | Pagado                          |       |                |         |      |           |          | x           |
 | Pendiente                       |       |                |         |      |           |          | x           |
 
-| Tipo_Membresias |                               |              |            |            |           |
-|-----------------|-------------------------------|--------------|------------|------------|-----------|
+###  Tipo_Membresias
+
 | membresia_id    | Descripcion                   | Pago_inicial | cant_cuota | pago_cuota | estado_id |
+|-----------------|-------------------------------|--------------|------------|------------|-----------|
 | 1               | Trimestral   familiar de 02   | S/500.00     | 0          | S/0.00     | 1         |
 | 2               | Trimestral familiar de 03     | S/580.00     | 0          | S/0.00     | 1         |
 | 3               | Trimestral   familiar de 04   | S/630.00     | 0          | S/0.00     | 1         |
@@ -41,38 +44,43 @@
 | 13              | Adicional anual   familiar    | S/100.00     | 0          | S/15.00    | 1         |
 
 
-| Tipo_Moneda          |             |
-|----------------------|-------------|
+###  Tipo_Moneda
+
 | moneda_id            | Descripcion |
+|----------------------|-------------|
 | 1                    | Soles       |
 | 2                    | Dólares     |
 | 3                    | Euros       |
 
 
-| Tipo_Pagos           |             |
-|----------------------|-------------|
+###  Tipo_Pagos
+
 | tipoPago_id          | Descripcion |
+|----------------------|-------------|
 | 1                    | tarjeta     |
 | 2                    | efectivo    |
 
 
-| Tipo_Documentos      |             |
-|----------------------|-------------|
+###  Tipo_Documentos 
+
 | tipoDoc_id           | Descripcion |
+|----------------------|-------------|
 | 1                    | DNI         |
 | 2                    | CE          |
 | 3                    | CEDULA      |
 
 
-| Respuestas_solicitud |             |
-|----------------------|-------------|
+###  Respuestas_solicitud
+
 | tipoResp_id          | Descripcion |
+|----------------------|-------------|
 | 1                    | aprobado    |
 | 2                    | desaprobado |
 
-| Areas        |                        |                     |
-|--------------|------------------------|---------------------|
+###  Areas
+
 | area_id      | Descripcion            | estado_id           |
+|--------------|------------------------|---------------------|
 | 1            | Cancha de   futbol     | 1                   |
 | 2            | Cancha de voley        | 1                   |
 | 3            | Cancha de   Basketball | 1                   |
@@ -80,9 +88,10 @@
 | 5            | Zona de   parrilla     | 1                   |
 
 
-| Espacios     |                        |                     |                     |
-|--------------|------------------------|---------------------|---------------------|
+###  Espacios
+
 | espacio_id   | area_id                | descripcion         | estado_id           |
+|--------------|------------------------|---------------------|---------------------|
 | 1            | 1                      | Cancha 01           | 1                   |
 | 2            | 1                      | Cancha 02           | 1                   |
 | 3            | 2                      | Cancha 01           | 1                   |
@@ -90,24 +99,27 @@
 | 5            | 3                      | Cancha 01           | 1                   |
 
 
-| Promociones  |                        |                     |                     |             |                         |
-|--------------|------------------------|---------------------|---------------------|-------------|-------------------------|
+###  Promociones
+
 | Promocion_id | descripcion            | fechaHora_inic      | fechaHora_fin       | estado_id   | observacion             |
+|--------------|------------------------|---------------------|---------------------|-------------|-------------------------|
 | 1            | Gran kermes            | 28-07-2023   8:00am | 28-07-2023   5:00pm | 1           | feria   y shw cirquense |
 | 2            | Gracias Maestro        | 08-07-2023 8:00am   | 09-07-2023 5:00pm   | 2           | eventos diversos        |
 
 
-| Invitados    |                        |                     |                     |             |                         |           |
-|--------------|------------------------|---------------------|---------------------|-------------|-------------------------|-----------|
+###  Invitados 
+
 | Invitado_id  | tipoDoc_id             | documento           | Nombre              | ApellidoPat | ApellidoMat             | estado_id |
+|--------------|------------------------|---------------------|---------------------|-------------|-------------------------|-----------|
 | 1            | 1                      | 48510548            | Carlos              | Campos      | Tello                   | 1         |
 | 2            | 1                      | 52140874            | Luis                | Poma        | Huamani                 | 1         |
 | 3            | 1                      | 21453624            | Julio               | Garcia      | Quispe                  | 1         |
 | 4            | 1                      | 24510875            | Elmer               | Rosas       | Orosco                  | 1         |
 
-| permisos   |                       |                           |
-|------------|-----------------------|---------------------------|
+###  permisos
+
 | permiso_id | nombre                | descripcion               |
+|------------|-----------------------|---------------------------|
 | 1          | Dashboard_progreso    | s                         |
 | 2          | Reservar Area         | s                         |
 | 3          | Mis   reservaciones   | s                         |
@@ -127,16 +139,18 @@
 | 17         | envio   recordatorio  | g                         |
 
 
-| Roles      |                       |                           |
-|------------|-----------------------|---------------------------|
+###  Roles
+
 | rol_id     | descripcion           | observacion               |
+|------------|-----------------------|---------------------------|
 | 1          | Administrador         | acceso   total            |
 | 2          | Gestor                | acceso para actualizacion |
 | 3          | socio                 | socios   activos          |
 
-| paises  |          |
-|---------|----------|
+###  paises
+
 | pais_id | nombre   |
+|---------|----------|
 | 1       | PERU     |
 | 2       | COLOMBIA |
 | 3       | EEUU     |
@@ -144,24 +158,27 @@
 
 ## TABLAS de ED
 
-| socios   |         |              |              |                  |          |            |           |           |               |         |              |           |
-|----------|---------|--------------|--------------|------------------|----------|------------|-----------|-----------|---------------|---------|--------------|-----------|
+###  socios 
+
 | socio_id | nombre  | apellido_pat | apellido_mat | email            | password | tipoDoc_id | documento | telefono  | direccion     | pais_id | foto         | estado_id |
+|----------|---------|--------------|--------------|------------------|----------|------------|-----------|-----------|---------------|---------|--------------|-----------|
 | 1        | ANTONIO | POMA         | AYALA        | poma@gmail.com   | 1234     | 1          | 25140625  | 990220651 | Av. Rosales   | 1       | https:/foto1 | 1         |
 | 2        | MARIA   | QUISPE       | RIOS         | quispe@gmail.com | 1234     | 1          | 45021658  | 952846955 | Av. Argentina | 1       | https:/foto2 | 1         |
 | 3        | NELIDA  | ORDOÑEZ      | MANRIQUE     | nelida@gmail.com | 1234     | 1          | 32061547  | 923547895 | Av. Union     | 1       | https:/foto3 | 1         |
 
-| usuarios   |                |          |                   |        |              |              |           |                |                     |
-|------------|----------------|----------|-------------------|--------|--------------|--------------|-----------|----------------|---------------------|
+###  usuarios 
+
 | usuario_id | username       | password | email             | nombre | apellido_pat | apellido_mat | estado_id | fecha_creacion | fecha_actualizacion |
+|------------|----------------|----------|-------------------|--------|--------------|--------------|-----------|----------------|---------------------|
 | 1          | martin agapito | mar123   | martina@gmail.com | martin | agapito      | sandoval     | 1         | 10-Jul         | 10-Jul              |
 | 2          | edith huaman   | edi123   | edithh@gmail.com  | edith  | huaman       | uchupe       | 1         | 10-Jul         | 10-Jul              |
 
 
 ## TABLAS de EP
-| pagos_x_socio |          |              |                    |           |               |            |           |
-|---------------|----------|--------------|--------------------|-----------|---------------|------------|-----------|
+###  pagos_x_socio
+
 | pagoSocio_id  | socio_id | membresia_id | descripcion        | moneda_id | monto_cargado | fecha_venc | estado_id |
+|---------------|----------|--------------|--------------------|-----------|---------------|------------|-----------|
 | 1             | 1        | 4            | Cuota 01   Inicial | 1         | 430           | 14-Jun     | 6         |
 | 2             | 1        | 4            | Cuota 02           | 1         | 49            | 14-Jul     | 6         |
 | 3             | 1        | 4            | Cuota 03           | 1         | 49            | 14-Ago     | 7         |
@@ -175,39 +192,44 @@
 | 11            | 1        | 4            | Cuota 11           | 1         | 49            | 14-Abr     | 7         |
 | 12            | 1        | 4            | Cuota 12           | 1         | 49            | 14-May     | 7         |
 
-| reservas   |          |            |                  |               |           |                            |          |             |            |           |
-|------------|----------|------------|------------------|---------------|-----------|----------------------------|----------|-------------|------------|-----------|
+###  reservas
+
 | reserva_id | socio_id | espacio_id | fecha_solicitada | fecha_reserva | cant_hora | info_reserva               | invitado | tipoResp_id | fecha_resp | estado_id |
+|------------|----------|------------|------------------|---------------|-----------|----------------------------|----------|-------------|------------|-----------|
 | 1          | 1        | 1          | 12-Jul           | 15-Jul        | 2         | futbol   minicampeonato    | 5        | 1           | 14-Jul     | 1         |
 | 2          | 1        | 3          | 13-Jul           | 15-Jul        | 1         | voley                      | 4        | 1           | 14-Jul     | 1         |
 | 3          | 1        | 5          | 13-Jul           | 15-Jul        | 1         | basketball   entrenamiento | 2        | 1           | 14-Jul     | 1         |
 
-| invitados_x_reserva |             |
-|---------------------|-------------|
+###  invitados_x_reserva 
+
 | reserva_id          | invitado_id |
+|---------------------|-------------|
 | 1                   | 1           |
 | 1                   | 4           |
 | 2                   | 2           |
 | 2                   | 3           |
 
-| actualizarSocios |          |                   |                |                 |                  |            |             |
-|------------------|----------|-------------------|----------------|-----------------|------------------|------------|-------------|
+###  actualizarSocios
+
 | actSocio_id      | socio_id | email_socio       | telefono_socio | direccion_socio | fecha_solicitada | fecha_actu | tipoResp_id |
+|------------------|----------|-------------------|----------------|-----------------|------------------|------------|-------------|
 | 1                | 1        | art5@gmail.com    | 952145623      | Av. Palmeras    | 13-Jul           | 15-Jul     | 1           |
 | 2                | 2        | rst25@gmail.com   | 952145874      | Av. Wilson      | 12-Jul           | 14-Jul     | 1           |
 | 3                | 3        | erickud@gmail.com | 925632145      | Av. Granada     | 12-Jul           | 14-Jul     | 1           |
 
-| roles_x_usuario |            |            |
-|-----------------|------------|------------|
+###  roles_x_usuario 
+
 | rxu_id          | usuario_id | rol_id     |
+|-----------------|------------|------------|
 | 1               | 1          | 1          |
 | 2               | 1          | 2          |
 | 3               | 2          | 2          |
 
 
-| permisos_x_rol  |            |            |
-|-----------------|------------|------------|
+###  permisos_x_rol
+
 | pxr_id          | rol_id     | permiso_id |
+|-----------------|------------|------------|
 | 1               | 3          | 1          |
 | 2               | 3          | 2          |
 | 3               | 3          | 3          |
@@ -222,13 +244,15 @@
 | 12              | 1          | 11         |
 | 13              | 2          | 11         |
 
-| comprobante    |               |               |           |             |           |
-|----------------|---------------|---------------|-----------|-------------|-----------|
+###  comprobante
+
 | comprobante_id | fecha_emision | importe_total | moneda_id | tipoPago_id | estado_id |
+|----------------|---------------|---------------|-----------|-------------|-----------|
 | B001           | 19-Jul        | 479           | 1         | 1           | 6         |
 
-| detalle_comprobante |              |
-|---------------------|--------------|
+###  detalle_comprobante
+
 | comprobante_id      | pagoSocio_id |
+|---------------------|--------------|
 | B001                | 1            |
 | B001                | 2            |
