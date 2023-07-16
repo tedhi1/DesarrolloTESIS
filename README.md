@@ -25,4 +25,4 @@
 - **UQ**: _Unique Attribute_
 - **ED**: _Entidad de Datos_
 - **EP**: _Entidad Pivote_
-- **EC**: _Entidad Catalogo
+- **EC**: _Entidad Catalogo_
